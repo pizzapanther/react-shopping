@@ -14,13 +14,14 @@ function slist_reducer (state, action) {
   }
 
   console.log(action);
+  let new_state = deepcopy(state);
   if (action.type === 'TOGGLE_IN_CART') {
-  	let new_state = deepcopy(state);
   	new_state.shopping_list[action.data.index].in_cart = !state.shopping_list[action.data.index].in_cart;
-  	return new_state;
+  } else if (action.type === 'ADD_ITEM') {
+  	new_state.shopping_list.push({name: action.data.name, in_cart: false});
   }
 
-  return state;
+  return new_state;
 }
 
 export default slist_reducer;
