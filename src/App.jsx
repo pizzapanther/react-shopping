@@ -7,8 +7,10 @@ import { red } from '@material-ui/core/colors';
 import { createTheme } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
+import Box from '@material-ui/core/Box';
 
 import ShoppingList from './shopping-list.jsx';
+import ShoppingCount from './shopping-count.jsx';
 import AddItem from './add-item.jsx';
 import store from './store.js';
 
@@ -44,7 +46,14 @@ function App() {
           <div className="App">
             <AppBar position="relative">
               <Toolbar>
-                <h1><Link to="/" style={{textDecoration: 'none', color: 'white'}}>Shopping List</Link></h1>
+                <Box display="flex" width={'100%'} alignItems="center">
+                  <Box flexGrow={1}>
+                    <h1><Link to="/" style={{textDecoration: 'none', color: 'white'}}>Shopping List</Link></h1>
+                  </Box>
+                  <Box>
+                    <ShoppingCount/>
+                  </Box>
+                </Box>
               </Toolbar>
             </AppBar>
             <Switch>
