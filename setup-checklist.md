@@ -17,10 +17,13 @@ Checklist for setting up you your React App.
 
 ## Redux Setup
 
-- [ ] Created a data store (`store.js`)
-- [ ] Created a reducer with an initial state (`reducer.js`)
-- [ ] Wrapped app in `Provider` component
-- [ ] Connect a component to the data store with `connect()`, `mapStateToProps`, and `mapDispatchToProps`
+- [x] Created a data store (`store.js`)
+- [x] Created a reducer with an initial state (`reducer.js`)
+- [x] Wrapped app in `Provider` component
+- [x] Connect a component to the data store with `connect()`, `mapStateToProps`, and `mapDispatchToProps`
+
+## Redux Write
+
 - [ ] Created an action (`action.js`)
 - [ ] In Reducer: created a switch for the action type
   - [ ] deepcopy state
