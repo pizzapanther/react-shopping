@@ -24,7 +24,7 @@ Checklist for setting up you your React App.
 
 ## Redux Write
 
-- [ ] Created an action (`action.js`)
+- [x] Created an action (`action.js`)
 - [ ] In Reducer: created a switch for the action type
   - [ ] deepcopy state
   - [ ] modify data
