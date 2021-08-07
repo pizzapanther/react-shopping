@@ -11,9 +11,9 @@ Checklist for setting up you your React App.
 ## React Router
 
 - [x] Design App URLs
-- [ ] Wrapped app in `BrowserRouter` component
-- [ ] Added routes `Switch` component
-- [ ] Added 404 to `Switch`
+- [x] Wrapped app in `BrowserRouter` component
+- [x] Added routes `Switch` component
+- [x] Added 404 to `Switch`
 
 ## Redux Setup
 
