@@ -10,7 +10,7 @@ import TextField from '@material-ui/core/TextField';
 import {addItem} from './actions.js';
 
 
-class AddItem extends (react.Component) {
+export class AddItem extends (react.Component) {
 	constructor(props) {
 		super(props);
 

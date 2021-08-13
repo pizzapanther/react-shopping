@@ -1,5 +1,5 @@
 import React from 'react';
-import AddItem from './add-item.jsx';
+import {AddItem} from './add-item.jsx';
 import {mount, shallow, render} from 'enzyme';
 import chai from 'chai';
 import chaiEnzyme from 'chai-enzyme';
@@ -15,6 +15,6 @@ test('Add Item test', () => {
     <AddItem/>
   );
 
-  expect(wrapper.instance().props.shopping_list)
-    .deep.equal([]);
+  expect(wrapper.instance().state.item)
+    .deep.equal('');
 });
